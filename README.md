@@ -17,7 +17,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/logo.png">
-    <img src="images/logo.png" alt="Game logo" width="256" height="256">
+    <img src="GitHub/images/logo.png" alt="Game logo" width="256" height="256">
   </a>
 
 <h3 align="center">Masterwatch</h3>
@@ -25,12 +25,22 @@
   <p align="center">
     Game is in early development, expect changes!
     <br />
-    <a href="LINK TO DEMO">View Demo(TBD)</a>
-    ·
+    <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2023">
+    
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/VoR-gamedev/Masterwatch">
+    
+    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/VoR-gamedev/Masterwatch/total">
+    
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/VoR-gamedev/Masterwatch">
+    
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Vor-gamedev/Masterwatch">
+    
+    </p>
+    <p>
     <a href="https://github.com/VoR-gamedev/Masterwatch/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/VoR-gamedev/Masterwatch/issues">Request Feature</a>
-  </p>
+    or
+    <a href="https://github.com/VoR-gamedev/Masterwatch/issues">Ask for feature</a>
+    </p>
 </div>
 
 
@@ -72,11 +82,10 @@ This game was started because it reminds me of an old browser-based game and I h
 
 ### Built With
 
-
-![Nuget](https://img.shields.io/nuget/v/MonoGame.Extended?label=MonoGame.Extended&style=for-the-badge)
-![Nuget](https://img.shields.io/nuget/v/GeonBit.UI?label=GeonBit.UI&style=for-the-badge)
-
-
+* ![Nuget](https://img.shields.io/nuget/v/MonoGame.Framework.DesktopGL?label=MonoGame.DesktopGL&style=plastic)
+* ![Nuget](https://img.shields.io/nuget/v/MonoGame.Extended?label=MonoGame.Extended&style=plastic)
+* ![Nuget](https://img.shields.io/nuget/v/GeonBit.UI?label=GeonBit.UI&style=plastic)
+* ![Nuget](https://img.shields.io/nuget/v/Illumilib?label=IllumiLib)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -204,4 +213,4 @@ Project Link: [GitHub](https://github.com/VoR-gamedev/Masterwatch)
 [license-shield]: https://img.shields.io/github/license/VoR-gamedev/Masterwatch.svg?style=for-the-badge
 [license-url]: https://github.com/VoR-gamedev/Masterwatch/blob/master/LICENSE.txt
 <!-- Other reference style links -->
-[game-screenshot]: images/screenshot.png
+[game-screenshot]: GitHub/images/screenshot.png
