@@ -19,26 +19,19 @@
   <a href="https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/logo.png">
     <img src="GitHub/images/logo.png" alt="Game logo" width="256" height="256">
   </a>
-
-<h3 align="center">Masterwatch</h3>
-
+<h3 align="center">Masterwatch</h3
   <p align="center">
     Game is in early development, expect changes!
+    </p>
     <br />
     <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2023">
-    
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/VoR-gamedev/Masterwatch">
-    
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/VoR-gamedev/Masterwatch/total">
-    
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/VoR-gamedev/Masterwatch">
-    
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Vor-gamedev/Masterwatch">
-    
-    </p>
     <p>
     <a href="https://github.com/VoR-gamedev/Masterwatch/issues">Report Bug</a>
-    or
+    <p>or</p>
     <a href="https://github.com/VoR-gamedev/Masterwatch/issues">Ask for feature</a>
     </p>
 </div>
