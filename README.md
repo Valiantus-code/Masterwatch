@@ -7,6 +7,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -19,7 +20,13 @@
   <a href="https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/logo.png">
     <img src="GitHub/images/logo.png" alt="Game logo" width="256" height="256">
   </a>
-<h3 align="center">Masterwatch</h3
+
+  <br />
+
+<a href="https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/GameName.png">
+    <img src="GitHub/images/GameName.png" alt="Game name pixelart">
+  </a>
+
   <p align="center">
     Game is in early development, expect changes!
     </p>
@@ -149,7 +156,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - More may be added later.
 - [ ] GUI update
 
-That's it for now, give this project a **Star** to follow development!
+That's it for now, will be updated with more planned changes later on.
+
+Development progress can be explored in detail inside the [Change log](https://github.com/VoR-gamedev/Masterwatch/blob/master/CHANGELOG.md).
 
 See the [open issues](https://github.com/VoR-gamedev/Masterwatch/issues) for a full list of proposed features (and known issues).
 

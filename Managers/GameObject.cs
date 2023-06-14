@@ -1,9 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using MonoGame.Extended;
-using MonoGame.Extended.Screens;
-using System.Xml.Linq;
 
 namespace Masterwatch.Managers
 {
@@ -53,7 +48,7 @@ namespace Masterwatch.Managers
         public abstract void Draw(MainGame game);
 
         // sets
-        public void SetPosition(float x, float y) 
+        public void SetPosition(float x, float y)
         {
             this.x = x;
             this.y = y;

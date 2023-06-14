@@ -1,10 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
-using MonoGame.Extended.Timers;
 
 namespace Masterwatch.Managers
 {
@@ -63,12 +58,12 @@ namespace Masterwatch.Managers
             // Initialize page in game
             page.Init(game);
         }
-        public void Remove(Page page) 
+        public void Remove(Page page)
         {
             // Remove page from  list
-            pages.Remove(page); 
+            pages.Remove(page);
         }
-        public void Clear() 
+        public void Clear()
         {
             pages.Clear();
         }

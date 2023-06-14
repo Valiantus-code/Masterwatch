@@ -1,26 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using MonoGame.Extended;
-using MonoGame.Extended.Screens;
 using System.Collections.Generic;
-using System.Xml.Linq;
 
 namespace Masterwatch.Managers
 {
     public class ObjectManager
     {
         public List<GameObject> objects = new List<GameObject>();
-        public int count {  get { return objects.Count; } }
+        public int count { get { return objects.Count; } }
 
-        public ObjectManager() 
+        public ObjectManager()
         {
-            
+
         }
 
         public void Update(GameTime gameTime, MainGame game)
         {
-            for (int i = 0; i < count; i++) 
+            for (int i = 0; i < count; i++)
             {
                 GameObject obj = objects[i];
 
