@@ -62,7 +62,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#gameplay">Gameplay</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -98,25 +98,25 @@ To get a local copy of the source code up and running follow these simple steps:
 5. Add prerequisites to VS studio or your IDE of choice *(Explained below)*.
 6. Build and run the project to test it.
 
-### Prerequisites (TBD)
+### Prerequisites
 
-These are the required libraries / frameworks for the project.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+To make the project work locally you need to install project prerequisites:
+
+1. Follow the [MonoGame "Getting Started" guide](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html).
+2. Add the rest of libraries / frameworks using the .NET CLI:
+    * `dotnet add package MonoGame.Extended --version 3.8.0`
+    * `dotnet add package GeonBit.UI --version 4.1.0.1`
+    * `dotnet add package Illumilib --version 1.2.7`
 
 ### Installation
 
 Installation file will be available once development has reached some point of completion and gameplay is available.  
 Until then updates will be frequent and gameplay may change a lot of times.
 
-<!-- USAGE EXAMPLES -->
-## Usage (TBD)
+<!-- GAMEPLAY EXAMPLES -->
+## Gameplay
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+I will post some screenshots, or a trailer of some sorts here including the GUI and some gameplay references.
 
 
 
