@@ -10,8 +10,8 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.Content.Pipeline.dll
-/reference:..\..\..\GeonBit.UI-master\GeonBit.UI\Libs\DataTypes\bin\Debug\netcoreapp3.1\GeonBit.UI.DataTypes.dll
+/reference:..\..\..\..\..\.nuget\packages\geonbit.ui\4.1.0.1\lib\netcoreapp3.1\GeonBit.UI.DataTypes.dll
+/reference:..\..\..\..\..\.nuget\packages\monogame.framework.content.pipeline\3.8.1.303\lib\net6.0\MonoGame.Framework.Content.Pipeline.dll
 
 #---------------------------------- Content ---------------------------------#
 

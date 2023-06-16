@@ -80,6 +80,13 @@
 
 This game was started because it reminds me of an old browser-based game and I had a hinkering to do some programming.
 
+Some icons from the game (Made in Aseprite):  
+![Oak Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/OakLog.png)
+![Birch Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/BirchLog.png)
+![Walnut Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/WalnutLog.png)
+![Willow Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/WillowLog.png)
+![Redwood Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/RedwoodLog.png)
+
 ### Built With
 
 * ![Nuget](https://img.shields.io/nuget/v/MonoGame.Framework.DesktopGL?label=MonoGame.DesktopGL&style=plastic)
@@ -107,6 +114,8 @@ To make the project work locally you need to install project prerequisites:
     * `dotnet add package MonoGame.Extended --version 3.8.0`
     * `dotnet add package GeonBit.UI --version 4.1.0.1`
     * `dotnet add package Illumilib --version 1.2.7`
+
+*You may need to add/update reference locations inside MGCB to **GeonBit.UI.DataTypes** and **MonoGame.Extended.Content.Pipeline** inside your .nuget package folder.*
 
 ### Installation
 
@@ -195,8 +204,13 @@ Project Link: [GitHub](https://github.com/VoR-gamedev/Masterwatch)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+Game stuff:
 * [Monogame](https://www.monogame.net/) - Game framework
 * [GeonBit.UI](https://github.com/RonenNess/GeonBit.UI) - Slightly outdated but works for GUI
+* [IllumiLib]() - Library for controlling RGB device lightning
+
+Extra stuff:
+* [Markdown Editor v2](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor2) - VS extension for Markdown editing
 * [Aseprite](https://www.aseprite.org/) - Asset drawing tool
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
