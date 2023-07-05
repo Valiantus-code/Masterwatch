@@ -39,6 +39,9 @@
     <Reference Include="GeonBit.UI.DataTypes">
       <HintPath>..\..\GeonBit.UI-master\GeonBit.UI\Libs\DataTypes\bin\Debug\netcoreapp3.1\GeonBit.UI.DataTypes.dll</HintPath>
     </Reference>
+    <Reference Include="MonoGame.Extended">
+      <HintPath>..\..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.dll</HintPath>
+    </Reference>
     <Reference Include="MonoGame.Extended.Content.Pipeline">
       <HintPath>..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.Content.Pipeline.dll</HintPath>
     </Reference>

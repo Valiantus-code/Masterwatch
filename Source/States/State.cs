@@ -1,4 +1,5 @@
 ﻿using GeonBit.UI;
+using GeonBit.UI.Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -16,12 +17,9 @@ namespace Masterwatch.Source.States
         #region Fields
 
         protected ContentManager _content;
-
         protected GraphicsDevice _graphicsDevice;
-
         protected Game1 _game;
-
-        protected UserInterface _userInterface; // Added field for UserInterface
+        protected UserInterface _userInterface;
 
         #endregion
 
@@ -30,13 +28,11 @@ namespace Masterwatch.Source.States
         public State(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
         {
             _game = game;
-
             _graphicsDevice = graphicsDevice;
             _content = content;
 
-            UserInterface.Initialize(content, BuiltinThemes.hd);
-            _userInterface = new UserInterface();
-
+            // Assign the UserInterface instance from Game1
+            _userInterface = game.UI;
         }
 
         public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch);

@@ -2,15 +2,35 @@
 # Change Log
 All notable changes to this project will be documented in this file.
  
-The format is based on [Keep a Changelog](http://keepachangelog.com/)
-and this project adheres to [Semantic Versioning](http://semver.org/).
+Version format: x.y.z (x = build, y = version, z = days since last version) - date of publish.
+
+***
 
 
 
- # [1.4.0] - 2023-06-16
+ # [0.5.19] - 2023-07-05 - Comeback update
+ Had a slight burnout from coding ``/. I am back though.
+## Added
+* Achievements screen
+* Settings screen with tabs
+    * Game settings
+    * Video settings - Window mode, resolution, GUI scale
+    * Audio settings
+* Splash screen disclaimer for Early Access content
+* Added new default cursor 
+
+### Changed
+* Changed the base menu panel size and anchorings
+
+### Fixed
+* Using the UserInterface class from GeonBitUI properly
+
+***
+
+ # [0.4.2] - 2023-06-16
  
 ## Added
-* Achievements screen (Not working yet)
+* Achievements and loading screen buttons to main menu
 * Made 5 log/wood types and icons:
     * Oak
     * Birch
@@ -22,16 +42,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * Rewrite most of the code
 
 ### Fixed
-
 * States actually work now
 
 ***
 
- # [1.3.0] - 2023-06-14
+ # [0.3.0] - 2023-06-14
  
 ## Added
 * Screens! (named as states in the code)
-    * Main menu, settings, game screen, etc.
+    * For controlling main menu, settings, game screen, etc.
 
 * Some icon work
     * Custom cursor
@@ -47,7 +66,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ***
  
- # [1.2.0] - 2023-06-13 - Engine work
+ # [0.2.0] - 2023-06-13 - Engine work
 Working on the engine.
 ## Added
 * Game engine class additions
@@ -55,7 +74,7 @@ Working on the engine.
 
  ***
 
- # [1.1.0] - 2023-06-12 - Start development
+ # [0.1.0] - 2023-06-12 - Start development
 Start of the development journey for Masterwatch.
 ## Added
 * Game icon placeholder

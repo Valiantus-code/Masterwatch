@@ -21,21 +21,21 @@ namespace Masterwatch.Source.States
 
             gameName = content.Load<Texture2D>("Misc/GameName");
 
-            UserInterface.Active.Clear(); // Clear the current UI
+            _userInterface.Clear(); // Clear the current UI
 
             // Build the UI here
             #region Menu base Panel
 
-            Panel menuBase = new Panel(new Vector2(800, 700), PanelSkin.None, Anchor.Center);
-            UserInterface.Active.AddEntity(menuBase);
+            Panel menuBase = new Panel(new Vector2(800, 650), PanelSkin.None, Anchor.TopCenter);
+            _userInterface.AddEntity(menuBase);
 
             Image image = new Image(gameName, new Vector2(700, 150), ImageDrawMode.Stretch, Anchor.TopCenter);
             menuBase.AddChild(image);
 
-            Panel menuPanel = new Panel(new Vector2(300f, 500f), PanelSkin.Default, Anchor.BottomCenter);
+            #region Menu Panel
+            Panel menuPanel = new Panel(new Vector2(300f, 500f), PanelSkin.Default, Anchor.AutoCenter);
             menuBase.AddChild(menuPanel);
 
-            #region Menu Panel
             Paragraph paragraph = new Paragraph("Main menu", Anchor.AutoCenter);
             menuPanel.AddChild(paragraph);
 
@@ -54,12 +54,13 @@ namespace Masterwatch.Source.States
             {
                 GeonBit.UI.Utils.MessageBox.ShowMsgBox("WIP", "This feature is in development");
             };
+            loadButton.Enabled = false;
             menuPanel.AddChild(loadButton);
 
             Button achievementsButton = new Button("ACHIEVEMENTS", ButtonSkin.Default, Anchor.AutoCenter, new Vector2(0, 60));
             achievementsButton.OnClick = (Entity btn) =>
             {
-                GeonBit.UI.Utils.MessageBox.ShowMsgBox("WIP", "This feature is in development");
+                _game.ChangeState(new AchievementsState(_game, _graphicsDevice, _content));
             };
             menuPanel.AddChild(achievementsButton);
 
@@ -78,7 +79,9 @@ namespace Masterwatch.Source.States
             menuPanel.AddChild(exitButton);
             #endregion
 
-            Paragraph versionText = new Paragraph(text: Globals.versionNumber, Anchor.BottomCenter, scale: 0.8f);
+            menuPanel.AddChild(new HorizontalLine(Anchor.AutoCenter));
+
+            Paragraph versionText = new Paragraph(text: Globals.versionNumber, Anchor.AutoCenter, scale: 0.8f);
             menuPanel.AddChild(versionText);
 
             #endregion
@@ -90,7 +93,7 @@ namespace Masterwatch.Source.States
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             // Draw logic here
-            UserInterface.Active.Draw(spriteBatch);
+            _userInterface.Draw(spriteBatch);
         }
 
         public override void Update(GameTime gameTime)
@@ -112,7 +115,7 @@ namespace Masterwatch.Source.States
             #endregion
 
             // Update logic here
-            UserInterface.Active.Update(gameTime);
+            _userInterface.Update(gameTime);
         }
 
         public override void PostUpdate(GameTime gameTime)

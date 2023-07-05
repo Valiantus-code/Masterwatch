@@ -12,7 +12,7 @@ namespace Masterwatch
     /// </summary>
     public class Game1 : Game
     {
-        readonly GraphicsDeviceManager graphics;
+        GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
         // States
@@ -22,6 +22,9 @@ namespace Masterwatch
         // Background texture
         private Texture2D backgroundTexture;
         private Texture2D gameName;
+
+        // Declare a public getter for the UserInterface instance
+        public UserInterface UI { get; private set; }
 
         public void ChangeState(State state)
         {
@@ -34,10 +37,8 @@ namespace Masterwatch
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            // Settings launch screen size
-            graphics.PreferredBackBufferWidth = Globals.ScreenWidth;
-            graphics.PreferredBackBufferHeight = Globals.ScreenHeight;
-            graphics.ApplyChanges();
+            // Initialize Globals with the graphics device manager
+            Globals.Initialize(graphics);
 
         }
 
@@ -49,7 +50,7 @@ namespace Masterwatch
         /// </summary>
         protected override void Initialize()
         {
-            // Init stuff
+            // Init window title
             Window.Title = "Masterwatch";
 
             base.Initialize();
@@ -62,40 +63,39 @@ namespace Masterwatch
         protected override void LoadContent()
         {
             #region Load Textures
-            // Load textures for splashscreen
-
-
-
-            // Load the background texture
+            // Load the background texture for splashscreen
             backgroundTexture = Content.Load<Texture2D>("Misc/MenuBackground");
             gameName = Content.Load<Texture2D>("Misc/GameName");
 
             #endregion
 
-            // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-
             // Init UserInterface from GeonBit.UI
             UserInterface.Initialize(Content, BuiltinThemes.hd);
 
-            // Build UI in load screen
+            // Assign the UserInterface instance to the UI property
+            UI = UserInterface.Active;
+
+            // Create a new SpriteBatch, which can be used to draw textures.
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            // Build UI in splash screen
             #region Menu base Panel
-            Panel menuBase = new Panel(new Vector2(800, 700), PanelSkin.None, Anchor.Center);
+            Panel menuBase = new Panel(new Vector2(800, 650), PanelSkin.None, Anchor.TopCenter);
             UserInterface.Active.AddEntity(menuBase);
 
             Image image = new Image(gameName, new Vector2(700, 150), ImageDrawMode.Stretch, Anchor.TopCenter);
             menuBase.AddChild(image);
 
-            Panel panel = new Panel(new Vector2(600f, 400f), PanelSkin.Default, Anchor.Center, offset: new Vector2(0, 50));
+            #region Disclaimer Panel
+            Panel panel = new Panel(new Vector2(500f, 300f), PanelSkin.Default, Anchor.Center, offset: new Vector2(0, 50));
             menuBase.AddChild(panel);
 
-            #region Disclaimer Panel
             Header header = new Header("Disclaimer");
             panel.AddChild(header);
 
-            panel.AddChild(new HorizontalLine());
+            panel.AddChild(new HorizontalLine(Anchor.AutoCenter));
 
-            RichParagraph disclaimer = new RichParagraph("This game is currently in {{RED}}Early Access{{DEFAULT}} and is under heavy development.\nExpect {{BOLD}}changes, bugs and mayhem.{{DEFAULT}}", Anchor.Center, scale: 1.3f);
+            RichParagraph disclaimer = new RichParagraph("This game is currently in {{RED}}Early Access{{DEFAULT}} and is under heavy development.\nExpect {{BOLD}}changes, bugs and mayhem.{{DEFAULT}}", Anchor.AutoCenter, scale: 1.0f);
             panel.AddChild(disclaimer);
 
             Button button = new Button("I understand.", ButtonSkin.Default, Anchor.BottomCenter);

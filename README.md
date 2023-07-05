@@ -80,12 +80,12 @@
 
 This game was started because it reminds me of an old browser-based game and I had a hinkering to do some programming.
 
-Some icons from the game (Made in Aseprite):  
-![Oak Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/OakLog.png)
-![Birch Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/BirchLog.png)
-![Walnut Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/WalnutLog.png)
-![Willow Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/WillowLog.png)
-![Redwood Log](https://github.com/VoR-gamedev/Masterwatch/tree/master/GitHub/images/RedwoodLog.png)
+Some icons from the game *(Made in Aseprite)*:  
+![Oak Log](GitHub/images/OakLog.png)
+![Birch Log](GitHub/images/BirchLog.png)
+![Walnut Log](GitHub/images/WalnutLog.png)
+![Willow Log](GitHub/images/WillowLog.png)
+![Redwood Log](GitHub/images/RedwoodLog.png)
 
 ### Built With
 
